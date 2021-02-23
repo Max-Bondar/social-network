@@ -1,8 +1,11 @@
 {
+  "homepage": "http://Max-Bondar.github.io/social-network",
   "name": "chat",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -62,6 +65,7 @@
     "@typescript-eslint/parser": "4.0.1",
     "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^6.8.0",
+    "gh-pages": "^3.1.0",
     "prettier": "2.0.5",
     "tslint-react-hooks": "^2.2.2"
   },
